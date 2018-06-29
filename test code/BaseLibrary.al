@@ -235,7 +235,7 @@ codeunit 50104 TestHandling
                                     incrementAttribute(run, 'failed');
 
                                     suite.SetAttribute('status', 'Failed');
-                                    run.SetAttribute('status', 'Failed');
+                                    run.SetAttribute('result', 'Failed');
 
                                     failure := XmlElement.Create('failure');
                                     tcase.Add(failure);
